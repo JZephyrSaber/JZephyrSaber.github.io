@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <title>TEST | JZephyrの小窝</title>
+        <meta name="author" content="JZephyr">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/72429489?u=5d280b03e431604a883fd46032e2b3f4d677047d&v=4">
+        <script src="https://cdn.staticfile.org/instant.page/5.1.0/instantpage.min.js" type="module"></script>
+        <script src="https://cdn.staticfile.org/font-awesome/6.2.0/js/all.min.js"></script>
+        
+        <link rel="stylesheet" href="/css/fonts.min.css">
+        <link rel="stylesheet" href="/css/particlex.css">
+        
+        <script src="https://cdn.staticfile.org/vue/3.2.33/vue.global.prod.min.js"></script>
+    <meta name="generator" content="Hexo 5.4.2"></head>
+    <body>
+        <div id="loading" style="height:100vh;width:100vw;position:fixed;display:flex;z-index:200;justify-content:space-between;background:#fff;transition:opacity 0.3s ease-out"><div style="position:fixed;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center"><div id="loadcontent" style="width:50vmin;height:50vmin;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px #a3ddfb;text-align:center"><div><h2>LOADING...</h2><p style="word-break:keep-all">加载过慢请开启缓存(浏览器默认开启)</p><div><img alt="loading" src="/loading.gif"></div></div></div></div></div>
+        <div id="layout">
+            <i data-fa-symbol="calendar-solid" class="fa-solid fa-calendar fa-fw"></i>
+            <i data-fa-symbol="bookmark-solid" class="fa-solid fa-bookmark fa-fw"></i>
+            <i data-fa-symbol="tags-solid" class="fa-solid fa-tags fa-fw"></i>
+            <transition name="into">
+                <div v-show="show_page" style="display: -not-none">
+                    <div id="menu_show">
+                         
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">JZephyrの小窝</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;about</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;tags</span>
+        </a>
+        
+    </div>
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div class="curtain" @click="menu_show = !menu_show" v-show="menu_show"></div>
+        <div :class="'title'" @click="menu_show = !menu_show">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;JZephyrの小窝</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+                    </div>
+                    <div id="main">
+                        
+<div class="article">
+    <div>
+        <h1>TEST </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/10/3
+        </span>
+        
+        
+    </div>
+    <div class="content" v-pre>
+        <p>欢迎你来到这个网站，这里是我的个人博客，网站框架基于<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>。</p>
+<span id="more"></span>
+
+<h1 id="标题L1"><a href="#标题L1" class="headerlink" title="标题L1"></a>标题L1</h1><h2 id="标题L2"><a href="#标题L2" class="headerlink" title="标题L2"></a>标题L2</h2><h3 id="L3"><a href="#L3" class="headerlink" title="L3"></a>L3</h3><h4 id="L4"><a href="#L4" class="headerlink" title="L4"></a>L4</h4><h5 id="L5"><a href="#L5" class="headerlink" title="L5"></a>L5</h5><h6 id="L6"><a href="#L6" class="headerlink" title="L6"></a>L6</h6><center><font color="pink" size="30">希望你喜欢~</font></center>
+
+
+<pre><code class="StudySite">Markdown官方教程:https://markdown.com.cn/basic-syntax/
+FontAwesome 6 图标搜索获取:https://fontawesome.com/search/
+FontAwesome 6 图标中文网:https://fontawesome.dashgame.com/
+bootCDN:https://www.bootcdn.cn/
+</code></pre>
+<ul>
+<li>无序列表测试<ol>
+<li>有序列表测试</li>
+</ol>
+</li>
+</ul>
+<hr>
+<p><font color="pink" size="5px" >1.单周课程表</font></p>
+
+<table>
+<thead>
+<tr>
+<th align="center">星期</th>
+<th align="center">[1,2]课程</th>
+<th align="center">[3,4]课程</th>
+<th align="center">[5,6]课程</th>
+<th align="center">[7,8]课程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">星期一</td>
+<td align="center">大学生心理健康</td>
+<td align="center">英语</td>
+<td align="center">办公自动化应用技术</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">1阶,苏娜</td>
+<td align="center">308,宫丽丽</td>
+<td align="center">网1,阎宇婷</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">星期二</td>
+<td align="center">思修</td>
+<td align="center">办公自动化应用技术</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">4阶,王爱辉</td>
+<td align="center">网1,阎宇婷</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">星期三</td>
+<td align="center">英语</td>
+<td align="center">中国共产党党史</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">308,宫丽丽</td>
+<td align="center">4阶,李研</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">星期四</td>
+<td align="center"></td>
+<td align="center">社会体育技术</td>
+<td align="center">多媒体应用技术</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">田径场&#x2F;活动中心,徐阳 陈德毅 陈芳</td>
+<td align="center">网1,张崇</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">星期五</td>
+<td align="center">11周:劳动教育 13周:美育</td>
+<td align="center">多媒体应用技术</td>
+<td align="center">10,11周:形势与政策</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">402,王彰 毛云峰</td>
+<td align="center">网1,张崇</td>
+<td align="center">2阶,王爱辉 牛祥标</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><font color="pink" size="5px" >2.双周课程表</font></p>
+<table>
+<thead>
+<tr>
+<th align="center">星期</th>
+<th align="center">[1,2]课程</th>
+<th align="center">[3,4]课程</th>
+<th align="center">[5,6]课程</th>
+<th align="center">[7,8]课程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">星期一</td>
+<td align="center">国防知识</td>
+<td align="center">英语</td>
+<td align="center">办公自动化应用技术</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">1阶,李国强</td>
+<td align="center">308,宫丽丽</td>
+<td align="center">网1,阎宇婷</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">星期二</td>
+<td align="center">思修</td>
+<td align="center">办公自动化应用技术</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">4阶,王爱辉</td>
+<td align="center">网1,阎宇婷</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">星期三</td>
+<td align="center">英语</td>
+<td align="center">中国共产党党史</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">308,宫丽丽</td>
+<td align="center">4阶,李研</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">星期四</td>
+<td align="center"></td>
+<td align="center">社会体育技术</td>
+<td align="center">多媒体应用技术</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">田径场&#x2F;活动中心,徐阳 陈德毅 陈芳</td>
+<td align="center">网1,张崇</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">星期五</td>
+<td align="center">思修</td>
+<td align="center">多媒体应用技术</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">402,王爱辉</td>
+<td align="center">网1,张崇</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p>This <strong>word</strong> is bold. This <em>word</em> is italic.</p>
+<p>This is a regular paragraph.</p>
+<table>
+    <tr>
+        <td>你好</td>
+    </tr>
+</table>
+
+<p>This is another regular paragraph.</p>
+<p>description: “text\n<strong>bold</strong>\n_italic_”</p>
+
+    </div>
+    
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/waline/2.9.1/waline.min.css" />
+    <div id="comment">
+        <div id="waline-container"></div>
+    </div>
+    
+</div>
+                         
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 2022 - 2022 JZephyrの小窝
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            @JZephyr
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
+        
+    </div>
+</footer>
+                    </div>
+                </div>
+            </transition>
+            <div id="img_show">
+                <img id="img_content" alt="img_show">
+            </div>
+        </div>
+        <script src="https://cdn.staticfile.org/highlight.js/11.5.1/highlight.min.js"></script>
+        <script src="/js/particlex.js"></script>
+        <script src="/js/showimg.js"></script>
+        
+
+<script src="https://cdn.staticfile.org/waline/2.9.1/waline.min.js"></script>
+<script>
+    Waline.init({
+        el: '#waline-container',
+        serverURL: "",
+        commentCount: true,
+        pageview: false,
+        emoji: "https://unpkg.com/@waline/emojis@1.0.1/weibo,https://unpkg.com/@waline/emojis@1.0.1/alus,https://unpkg.com/@waline/emojis@1.0.1/bilibili,https://unpkg.com/@waline/emojis@1.0.1/qq,https://unpkg.com/@waline/emojis@1.0.1/tieba,https://unpkg.com/@waline/emojis@1.0.1/tw-emoji".split(','),
+        meta: "nick,mail,link".split(','),
+        requiredMeta: "nick".split(','),
+        lang: "zh-CN",
+        wordLimit: parseInt("0"),
+        pageSize: "10",
+        login: "enable",
+        locale: {}
+    });
+</script>
+
+    </body>
+</html>
