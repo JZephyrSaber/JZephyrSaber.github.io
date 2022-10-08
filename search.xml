@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>butterfly框架踩到的坑</title>
+      <link href="/2022/10/08/hole%20for%20me/"/>
+      <url>/2022/10/08/hole%20for%20me/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于subtitle-输入sub以后不在主页显示的问题"><a href="#关于subtitle-输入sub以后不在主页显示的问题" class="headerlink" title="关于subtitle 输入sub以后不在主页显示的问题"></a>关于subtitle 输入sub以后不在主页显示的问题</h1><p>如果是在_config.butterfly.yml编辑，可以在主题下_config.yml文件sub处输入你好或者Welcome 方可解决<br>    反正我是这么解决的，具体原因未知</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>TEST</title>
       <link href="/2022/10/03/TEST/"/>
       <url>/2022/10/03/TEST/</url>
