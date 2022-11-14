@@ -5858,7 +5858,10 @@ blockquote.pullquote.right {
   }
   
   #about-page .author-box {
-    position: relative;
+    position: relative; 
+  }
+  #about-page p{
+    text-align: center;
   }
   #about-page .author-box .author-img {
     margin: auto;
