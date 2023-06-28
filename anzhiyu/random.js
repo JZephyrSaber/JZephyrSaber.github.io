@@ -1,1 +1,1 @@
-var posts=["2022/09/30/My first Blog/","2022/10/03/TEST/","2022/10/15/aboutMyC/","2021/10/08/hole for me/","2022/11/08/myLife/","2022/10/12/nightsky/","2021/09/02/setting blog/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
+var posts=["2022/09/30/My first Blog/","2022/11/08/myLife/","2022/10/03/TEST/","2021/10/08/hole for me/","2022/10/15/aboutMyC/","2021/09/02/setting blog/","2022/10/12/nightsky/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
