@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>ASP.NET实现弹出对话框 确定或者取消 执行相应操作</title>
+      <link href="/2024/06/20/aspnetSolve-1/"/>
+      <url>/2024/06/20/aspnetSolve-1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>当我们进行删除操作的时候，有时删了会后悔，那么怎么让用户有一个犹豫的瞬间呢？其实操作很简单，只需要在Page_load中加入该行代码即可。<br>要注意的是，<strong>Button2是我的控件ID，你需要修改它！</strong></p></blockquote><figure class="highlight c#"><table><tr><td class="code"><pre><span class="line">Button2.Attributes[<span class="string">&quot;OnClick&quot;</span>] = <span class="string">&quot;return confirm(&#x27;are you sure?&#x27;)&quot;</span>;      <span class="comment">// 删除确认</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> C# </tag>
+            
+            <tag> ASP.NET </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C#解决记录同步问题</title>
       <link href="/2024/06/19/csharpSolve-1/"/>
       <url>/2024/06/19/csharpSolve-1/</url>
